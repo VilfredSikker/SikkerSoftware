@@ -23,7 +23,7 @@
 #    See the documentation for each action used below for the recommended IAM policies for this IAM user,
 #    and best practices on handling the access key credentials.
 
-name: Woodle
+name: SikkerSoftware - Master
 
 on:
   push:
@@ -44,7 +44,6 @@ jobs:
 
       - name: npm build
         run: |
-          cd app
           npm install
           npm run build
         env:
